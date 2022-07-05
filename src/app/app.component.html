@@ -1,0 +1,62 @@
+
+
+<!--fIRST SECTION-->
+<section id='hero' class="hero-font-details">
+  <div class="container">
+    <h1 class="hero-title load-hidden">
+      Hi, my name is <span class="text-color-main">{{yourName}},</span>
+      <br />
+      I'm a {{devStack}}.
+    </h1>
+    <div class="know-more-button grow">
+      <a href="#about">Know More</a>
+    </div>
+  </div>
+</section>
+
+
+
+<!--About Me Section-->
+<section id="about">
+  <div class="container">
+    <h2 class="section-title load-hidden">{{ sectionTitle | uppercase }}</h2>
+    <div class="row about-wrapper">
+      <div class="col-md-6 col-sm-12">
+        <div class="about-wrapper__image load-hidden">
+          <img
+            alt="Profile Image"
+            class="img-fluid rounded shadow-lg"
+            height="auto"
+            width="300px"
+            src="../assets/images/johndoe.jpg"
+            alt="Profile Image"
+          />
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="about-wrapper__info load-hidden">
+          <p class="about-wrapper__info-text">
+            This is where you can describe about yourself. The more you
+            describe about yourself, the more chances you can!
+            sygyufggggggggggggggggggg
+            wegffffffffffffffy
+            wsteyyyyyyyyyy
+            reyujhegggggdssssssssssssssssssssss
+            xsfggggggggggggggggggggyrteywuuuuuuuuuuuuuuuuuuuuuuu
+          </p>
+          <p class="about-wrapper__info-text">
+            Extra Information about you! like hobbies and your goals.
+          </p>
+          <div
+            (click)="goToUrl()"
+            class="view-resume-button grow">
+              View Resume
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="projects">
+  <app-project-details></app-project-details>
+</section>
