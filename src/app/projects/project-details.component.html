@@ -3,10 +3,12 @@
       <h2 class="section-title dark-blue-text">{{ projectSectionTitle | uppercase }}</h2>
       
       <!-- Notice: each .row is a project -->
-      <div class="row">
+      <div class="row"
+          *ngFor='let project of projects'
+      >
         <div class="col-lg-4 col-sm-12">
           <div class="project-wrapper__text load-hidden">
-            <h3 class="project-wrapper__text-title">Project Title 0</h3>
+            <h3 class="project-wrapper__text-title">{{ project.projectTitle }}</h3>
             <div>
               <p class="mb-4">
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit.
@@ -15,6 +17,7 @@
                 inventore debitis fuga numquam voluptate ex architecto
                 itaque molestiae.
               </p>
+              <p style="float: right; margin-top: -20px; font-size: 10px; margin-right: 10px;">Created: {{ project.releaseDate }}</p>
             </div>
             <div class="live-button">
               See Live
@@ -23,6 +26,7 @@
               Source Code
             </div>
           </div>
+          
         </div>
         <div class="col-lg-8 col-sm-12">
           <div class="project-wrapper__image load-hidden">
@@ -36,8 +40,8 @@
               >
                 <img
                   alt="Project Image"
-                  class="img-fluid"
-                  src="../../assets/images/thinkproject.jpg"
+                  class="img-fluid img_"
+                  [src] = 'project.projectImageUrl'
                 />
               </div>
             </a>

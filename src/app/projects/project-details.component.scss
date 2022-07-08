@@ -1,8 +1,19 @@
-$primary-color: #01C1AE;
-$secondary-color: #0fe7d2;
-$white-color: #E2E2E2;
-$dark-blue-text: rgb(3, 3, 102);
-$mid-font-size: 1em;
+$primary-color: #02aab0;
+$secondary-color: #00cdac;
+$white-color: #fff;
+$dark-blue-text: #272341;
+$mid-font-size: 2.5rem;
+$dark-grey: #333333;
+$light-grey: #d2d2d2;
+$default-font-size: 1.6rem;
+
+.row{
+  margin-bottom: 70px;
+}
+
+.img_ {
+  height: 450px;
+}
 
 #projects {
     background-color: $white-color;
@@ -57,18 +68,18 @@ $mid-font-size: 1em;
   }
 
   .live-button {
-    border: #0fe7d2;
+    border: $primary-color;
     border-style: solid;
-    padding: 8px 12px;
-    color: #0fe7d2;
+    padding: 6px 12px;
+    color: $primary-color;
     font-weight: bold;
     display: inline-block;
     cursor: pointer;
   }
 
   .source-code-button {
-    padding: 8px 12px;
-    color: #0fe7d2;
+    padding: 6px 12px;
+    color: $primary-color;
     display: inline-block;
     cursor: pointer;
     font-weight: bold;

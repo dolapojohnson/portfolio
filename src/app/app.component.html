@@ -8,8 +8,8 @@
       <br />
       I'm a {{devStack}}.
     </h1>
-    <div class="know-more-button grow">
-      <a href="#about">Know More</a>
+    <div class="know-more-button">
+      <a href="#about" class="cta-btn cta-btn--hero">Know More</a>
     </div>
   </div>
 </section>
@@ -28,7 +28,7 @@
             class="img-fluid rounded shadow-lg"
             height="auto"
             width="300px"
-            src="../assets/images/johndoe.jpg"
+            src="assets/images/johndoe.jpg"
             alt="Profile Image"
           />
         </div>
@@ -47,9 +47,9 @@
           <p class="about-wrapper__info-text">
             Extra Information about you! like hobbies and your goals.
           </p>
-          <div
+          <div 
             (click)="goToUrl()"
-            class="view-resume-button grow">
+            class="view-resume-button cta-btn cta-btn--resume">
               View Resume
           </div>
         </div>
@@ -60,3 +60,9 @@
 <section id="projects">
   <app-project-details></app-project-details>
 </section>
+<section id="contact">
+  <app-contact></app-contact>
+</section>
+<footer class="footer navbar-static-bottom">
+  <app-footer></app-footer>
+</footer>

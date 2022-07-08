@@ -1,0 +1,29 @@
+[
+    {
+        "projectId": 0,
+        "projectTitle": "MySafe",
+        "description": "#",
+        "releaseDate": "June 10, 2019",
+        "projectImageUrl": "assets/images/thinkproject.jpg",
+        "sourceCodeUrl": "https://github.com/dolapojohnson/mysafe",
+        "liveUrl": "lsdghjsk"
+    },
+    {
+        "projectId": 1,
+        "projectTitle": "Face-Recognition System",
+        "description": "#",
+        "releaseDate": "March 19, 2017",
+        "projectImageUrl": "assets/images/industrial_designers.jpg",
+        "sourceCodeUrl": "https://github.com/dolapojohnson/Face-Recognition",
+        "liveUrl": "lsdghjsk"
+    },
+    {
+        "projectId": 3,
+        "projectTitle": "WeatherInsider",
+        "description": "#",
+        "releaseDate": "Nov 25, 2020",
+        "projectImageUrl": "assets/images/organizing_projects.jpg",
+        "sourceCodeUrl": "https://github.com/dolapojohnson/weatherInsider",
+        "liveUrl": "lsdghjsk"
+    }
+]

@@ -3,15 +3,229 @@
 @import "~font-awesome/css/font-awesome.min.css";
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-a {
-  text-decoration: none; 
-  color: inherit;
-}
-a:hover {
-  text-decoration: none;
-  color: inherit;
-}
-section {
-  padding: 5rem 0rem;
+html {
+  &.sr .load-hidden {
+    visibility: hidden;
+  }
 }
 
+//variables
+$primary-color: #02aab0;
+$secondary-color: #00cdac;
+$white-color: #fff;
+$dark-blue-text: #272341;
+$mid-font-size: 2.5rem;
+$dark-grey: #333333;
+$light-grey: #d2d2d2;
+$default-font-size: 1.6rem;
+
+
+// MEDIA QUERY MANAGER
+/*
+0 - 600px:          Phone
+600px - 900px       Table Portrait
+900px - 1200px      Table Landscape
+[1200px - 1800px]   Desktop Normal Styles
+1800px +            Big Desktop
+1em = 16px
+ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
+*/
+@mixin respond($breakpoint) {
+  // Phone-xs
+  @if $breakpoint == phone-xs {
+    @media (max-width: 20em) {
+      @content;
+    } //0 - 320px
+  }
+  // Phone
+  @if $breakpoint == phone {
+    @media (max-width: 37.5em) {
+      @content;
+    } //0 - 600px
+  }
+  // Table small
+  @if $breakpoint == tab-port-sm {
+    @media (max-width: 48em) {
+      @content;
+    } //768px
+  }
+  // Table Portrait
+  @if $breakpoint == tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    } //900px
+  }
+  // Table Landscape
+  @if $breakpoint == tab-land {
+    @media (max-width: 75em) {
+      @content;
+    } //1200px
+  }
+  // Big Desktop
+  @if $breakpoint == big-desktop {
+    @media (min-width: 112.5em) {
+      @content;
+    } //1800px +
+  }
+}
+
+// Border White Mixin
+@mixin section-borders {
+  border: 1.5rem solid #fff;
+  border-top: 0;
+  border-bottom: 0;
+}
+
+@mixin supportColorForIE11 {
+  // Fall for text-gradient not supported in IE11
+  color: $secondary-color;
+  -webkit-text-fill-color: $secondary-color; // fallback
+  @supports (-webkit-background-clip: text) or (background-clip: text) {
+    background-image: linear-gradient(
+      135deg,
+      $primary-color 0%,
+      $secondary-color 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+  }
+}
+
+@mixin supportIE11 {
+  // Provide your basic styles to support IE11
+  @media screen and (-ms-high-contrast: active),
+    screen and (-ms-high-contrast: none) {
+    @content;
+  }
+}
+
+
+
+/* Hero Style */
+section {
+  @include respond(phone) {
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.section-title{
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  margin: 0px;
+  margin-bottom: 4.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5rem 0rem;
+
+  @include respond(phone) {
+    font-size: 2.8rem;
+  }
+}
+
+.text-color-main {
+  @include supportColorForIE11();
+
+  // Responsive text purple style
+  @include respond(phone) {
+    background-image: none;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &:hover {
+    transform: translateX(2px);
+  }
+}
+
+.cta-btn {
+  display: inline-block;
+  position: relative;
+  padding: 0.8rem $default-font-size;
+  font-weight: bold;
+  line-height: 1;
+  z-index: 1;
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.6s;
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 0px;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+  }
+}
+
+
+.cta-btn--hero {
+  @include supportColorForIE11();
+  border: 2px solid transparent;
+  border-image: linear-gradient(
+    135deg,
+    $primary-color 0%,
+    $secondary-color 100%
+  );
+  border-image-slice: 1;
+  @include supportIE11() {
+    color: $secondary-color !important;
+    &:hover {
+      color: $white-color !important;
+    }
+  }
+
+  @include respond(phone) {
+    background-image: none;
+    border: 2px solid $secondary-color;
+    -webkit-text-fill-color: $secondary-color;
+  }
+
+  &::after {
+    background-image: linear-gradient(
+      135deg,
+      $primary-color 0%,
+      $secondary-color 100%
+    );
+
+    @include respond(phone) {
+      background-image: none;
+    }
+  }
+
+  &:hover {
+    -webkit-text-fill-color: $white-color;
+    text-decoration: none;
+
+    @include respond(phone) {
+      -webkit-text-fill-color: $secondary-color;
+    }
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
+
+/* Resume Button Style */
+.cta-btn--resume {
+  color: $dark-blue-text;
+  border: 2px solid $dark-blue-text;
+
+  &::after {
+    background: $dark-blue-text;
+  }
+
+  &:hover {
+    color: $white-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
+  }
+}
