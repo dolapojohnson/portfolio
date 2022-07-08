@@ -131,13 +131,31 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
         }
       }
     }
+}
+
+.call-to-action {
+  border: $dark-blue-text;
+  border-style: solid;
+  padding: 8px 12px;
+  color: $dark-blue-text;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.send-mail-btn {
+  color: $dark-blue-text;
+  border: 2px solid $dark-blue-text;
+
+  &::after {
+    background: $dark-blue-text;
   }
 
-  .call-to-action {
-    border: $dark-blue-text;
-    border-style: solid;
-    padding: 8px 12px;
-    color: $dark-blue-text;
-    cursor: pointer;
-    font-weight: bold;
+  &:hover {
+    color: $white-color;
+    text-decoration: none;
+
+    &::after {
+      width: 100%;
+    }
   }
+}
