@@ -2,7 +2,7 @@
     {
         "projectId": 0,
         "projectTitle": "MySafe",
-        "description": "#",
+        "description": "The MySafe application is basically a storage application that collects user credentials, keeps the hashed values somewhere safe and enables retrieval when needed. This app was built for the purpose of learning using the MERN stack.",
         "releaseDate": "June 10, 2019",
         "projectImageUrl": "assets/images/thinkproject.jpg",
         "sourceCodeUrl": "https://github.com/dolapojohnson/mysafe",
@@ -11,7 +11,7 @@
     {
         "projectId": 1,
         "projectTitle": "Face-Recognition System",
-        "description": "#",
+        "description": "Learning to consume a REST API, I explored some machine learning features of the Rapid API. Built using React, tachyons and a few other libraries.",
         "releaseDate": "March 19, 2017",
         "projectImageUrl": "assets/images/industrial_designers.jpg",
         "sourceCodeUrl": "https://github.com/dolapojohnson/Face-Recognition",
@@ -20,7 +20,7 @@
     {
         "projectId": 3,
         "projectTitle": "WeatherInsider",
-        "description": "#",
+        "description": "This application consumed the Open Weather API to display the weather forecast for any city or place queried. My first dummy and individual project learning Reactjs.",
         "releaseDate": "Nov 25, 2020",
         "projectImageUrl": "assets/images/organizing_projects.jpg",
         "sourceCodeUrl": "https://github.com/dolapojohnson/weatherInsider",

@@ -166,6 +166,11 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     cursor: pointer;
     font-weight: bold;
     margin-left: 20px;
+    transition: all 0.2s ease-in;
+  
+    &:hover {
+      transform: translateY(-2px);
+    }
   }
 
   

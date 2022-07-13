@@ -8,6 +8,8 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,6 +21,7 @@ import { FooterComponent } from './footer/footer.component';
   imports: [
     BrowserModule,
     HttpClientModule,
+
   ],
   
   providers: [],
