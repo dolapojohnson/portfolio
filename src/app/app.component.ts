@@ -14,6 +14,6 @@ export class AppComponent {
 
 // a goToUrl method that directs the user to the external resume page
   goToUrl(): void {
-    window.open('https://www.linkedin.com/in/dolapo-johnson/', '_blank');
+    window.open('https://docs.google.com/document/d/1WpvHNayBZPR6K_ZJuJWb9xEo6Kn0WQpCgfZwPW3YtKM/edit?usp=sharing', '_blank');
   }
 }
