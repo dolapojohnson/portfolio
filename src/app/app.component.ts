@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   yourName: string = 'Dolapo';
+  title: string = 'Portfolio';
   devStack: string = 'Frontend Developer';
   sectionTitle: string = 'About Me';
   aboutMeImageUrl: string = '../assets/images/johndoe.jpg';
