@@ -6,7 +6,7 @@
     <h1 class="hero-title load-hidden">
       Hi, my name is <span class="text-color-main">{{yourName}},</span>
       <br />
-      I'm a {{devStack}}.
+      I'm a <span class="text-color-main">{{devStack}}.</span>
     </h1>
     <div class="know-more-button">
       <a href="#about" class="cta-btn cta-btn--hero">Know More</a>
@@ -21,29 +21,32 @@
   <div class="container">
     <h2 class="section-title load-hidden">{{ sectionTitle | uppercase }}</h2>
     <div class="row about-wrapper">
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6">
         <div class="about-wrapper__image load-hidden">
           <img
             alt="Profile Image"
             class="img-fluid rounded shadow-lg"
             height="auto"
             width="300px"
-            src="assets/images/johndoe.jpg"
+            style="margin-left: 3rem;"
+            src="assets/images/mine.png"
             alt="Profile Image"
           />
         </div>
       </div>
-      <div class="col-md-6 col-sm-12">
+      <div class="col-md-6">
         <div class="about-wrapper__info load-hidden">
           <p class="about-wrapper__info-text">
-            Hola! Mucho gusto. I am a full-time developer,
-            passionate about skilling up with every chance I get.
-            I strongly believe in community giving,
-            mentorship and peer-to-peer learning network. 
-            I am a problem solver, a solution finder, and a team player. 
+            <strong>
+              <span style="color:#272341 ;">Hola! Mucho gusto.</span> I am a full-time developer,
+              passionate about skilling up with every chance I get.
+              I strongly believe in community giving,
+              mentorship and peer-to-peer learning network. 
+              I am a problem solver, a solution finder, and a team player.
+            </strong> 
           </p>
-          <p class="about-wrapper__info-text">
-            I have strong interest in devOps, books, football and music.
+          <p class="about-wrapper__info-text" style="color: darkgreen; font-weight: 900;">
+            I have a strong interest in devOps, books, football and music.
           </p>
           <div 
             (click)="goToUrl()"
