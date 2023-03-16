@@ -94,8 +94,9 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 .footer {
     background-color: $dark-grey;
     color: $white-color;
-    padding: 4.8rem 0;
+    padding: 1rem 0;
     text-align: center;
+    font-size: 1em;
   
     @include respond(phone) {
       border: 0px;
@@ -103,11 +104,11 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   
     &__text {
       color: darken($white-color, 50%);
-      font-size: 1.3rem;
+      font-size: 1rem;
   
       a {
         color: darken($white-color, 50%);
-        font-size: 1.3rem;
+        font-size: 1rem;
         transition: all 0.4s;
         display: inline-block;
         background-color: $dark-grey;
