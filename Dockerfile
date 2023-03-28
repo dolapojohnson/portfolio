@@ -1,4 +1,4 @@
-#Use official node image as the base image
+# Use official node image as the base image
 FROM node:latest as build
 
 # Set the working directory

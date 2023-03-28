@@ -141,13 +141,13 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
 #about {
     background-color: $primary-color;
-    background-image: url("../assets/images/auditorium.png");
+    //background-image: url("../assets/images/auditorium.png");
     color: $dark-blue-text;
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     border-top: 0px;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    //-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     padding-bottom: 10%;
 
     @include respond(tab-land) {
