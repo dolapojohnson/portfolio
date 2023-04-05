@@ -1,3 +1,12 @@
+$primary-color: #02aab0;
+$secondary-color: #00cdac;
+$white-color: #fff;
+$dark-blue-text: #272341;
+$mid-font-size: 2.5rem;
+$dark-grey: #333333;
+$light-grey: #d2d2d2;
+$default-font-size: 1.6rem;
+
 #hero {
     align-items: center;
     background: #000;
@@ -9,18 +18,9 @@
     height: 100vh;
     margin-bottom: 0;
     min-height: 100vh;
-    padding: 0 5.6rem;
+    padding: 5rem;
     z-index: -1;
 }
-
-$primary-color: #02aab0;
-$secondary-color: #00cdac;
-$white-color: #fff;
-$dark-blue-text: #272341;
-$mid-font-size: 2.5rem;
-$dark-grey: #333333;
-$light-grey: #d2d2d2;
-$default-font-size: 1.6rem;
 
 
 
@@ -34,75 +34,75 @@ $default-font-size: 1.6rem;
 1em = 16px
 ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 */
-@mixin respond($breakpoint) {
-    // Phone-xs
-    @if $breakpoint == phone-xs {
-      @media (max-width: 20em) {
-        @content;
-      } //0 - 320px
-    }
-    // Phone
-    @if $breakpoint == phone {
-      @media (max-width: 37.5em) {
-        @content;
-      } //0 - 600px
-    }
-    // Table small
-    @if $breakpoint == tab-port-sm {
-      @media (max-width: 48em) {
-        @content;
-      } //768px
-    }
-    // Table Portrait
-    @if $breakpoint == tab-port {
-      @media (max-width: 56.25em) {
-        @content;
-      } //900px
-    }
-    // Table Landscape
-    @if $breakpoint == tab-land {
-      @media (max-width: 75em) {
-        @content;
-      } //1200px
-    }
-    // Big Desktop
-    @if $breakpoint == big-desktop {
-      @media (min-width: 112.5em) {
-        @content;
-      } //1800px +
-    }
-  }
+// @mixin respond($breakpoint) {
+//     // Phone-xs
+//     @if $breakpoint == phone-xs {
+//       @media (max-width: 20em) {
+//         @content;
+//       } //0 - 320px
+//     }
+//     // Phone
+//     @if $breakpoint == phone {
+//       @media (max-width: 37.5em) {
+//         @content;
+//       } //0 - 600px
+//     }
+//     // Table small
+//     @if $breakpoint == tab-port-sm {
+//       @media (max-width: 48em) {
+//         @content;
+//       } //768px
+//     }
+//     // Table Portrait
+//     @if $breakpoint == tab-port {
+//       @media (max-width: 56.25em) {
+//         @content;
+//       } //900px
+//     }
+//     // Table Landscape
+//     @if $breakpoint == tab-land {
+//       @media (max-width: 75em) {
+//         @content;
+//       } //1200px
+//     }
+//     // Big Desktop
+//     @if $breakpoint == big-desktop {
+//       @media (min-width: 112.5em) {
+//         @content;
+//       } //1800px +
+//     }
+//   }
   
-  // Border White Mixin
-  @mixin section-borders {
-    border: 1.5rem solid #fff;
-    border-top: 0;
-    border-bottom: 0;
-  }
+//   // Border White Mixin
+//   @mixin section-borders {
+//     border: 1.5rem solid #fff;
+//     border-top: 0;
+//     border-bottom: 0;
+//   }
   
-  @mixin supportColorForIE11 {
-    // Fall for text-gradient not supported in IE11
-    color: $secondary-color;
-    -webkit-text-fill-color: $secondary-color; // fallback
-    @supports (-webkit-background-clip: text) or (background-clip: text) {
-      background-image: linear-gradient(
-        135deg,
-        $primary-color 0%,
-        $secondary-color 100%
-      );
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      color: transparent;
-    }
-  }
+  // @mixin supportColorForIE11 {
+  //   // Fall for text-gradient not supported in IE11
+  //   color: $secondary-color;
+  //   -webkit-text-fill-color: $secondary-color; // fallback
+  //   @supports (-webkit-background-clip: text) or (background-clip: text) {
+  //     background-image: linear-gradient(
+  //       135deg,
+  //       $primary-color 0%,
+  //       $secondary-color 100%
+  //     );
+  //     -webkit-background-clip: text;
+  //     -webkit-text-fill-color: transparent;
+  //     color: transparent;
+  //   }
+  // }
   
-  @mixin supportIE11 {
-    // Provide your basic styles to support IE11
-    @media screen and (-ms-high-contrast: active),
-      screen and (-ms-high-contrast: none) {
-      @content;
-    }
-  }
+  // @mixin supportIE11 {
+  //   // Provide your basic styles to support IE11
+  //   @media screen and (-ms-high-contrast: active),
+  //     screen and (-ms-high-contrast: none) {
+  //     @content;
+  //   }
+  // }
 
 
 
@@ -116,24 +116,9 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 }
 
 .hero-title {
-    font-size: 3.5rem;
+    font-size: 2.5vh 2.5vw;
     font-weight: 700;
     text-align: left;
-
-    @include respond(tab-land) {
-        font-size: 4rem;
-      }
-      @include respond(tab-port) {
-        font-size: 3.6rem;
-        text-align: center;
-      }
-      @include respond(phone) {
-        font-size: 3.5rem;
-        line-height: 1.5;
-      }
-      @include respond(phone-xs) {
-        font-size: 2.8rem;
-      }
 }
 
 
@@ -150,16 +135,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     padding-bottom: 10%;
 
-    @include respond(tab-land) {
-        height: 100%;
-        -webkit-clip-path: none;
-        clip-path: none;
-      }
-
     .about-wrapper {
-        @include respond(phone) {
-          padding-bottom: 5rem;
-        }
     
         &__info {
           display: flex;
@@ -167,19 +143,19 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
           justify-content: center;
           flex-direction: column;
     
-          @include respond(tab-port-sm) {
-            align-items: center;
-          }
+          // @include respond(tab-port-sm) {
+          //   align-items: center;
+          // }
     
           &-text {
             text-align: left;
     
-            @include respond(tab-port) {
-              text-align: left;
-            }
-            @include respond(tab-port-sm) {
-              text-align: center;
-            }
+            // @include respond(tab-port) {
+            //   text-align: left;
+            // }
+            // @include respond(tab-port-sm) {
+            //   text-align: center;
+            // }
 
            
             &--important {
@@ -190,13 +166,13 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
               margin: 0.3rem 0;
               line-height: 1.6;
     
-              @include respond(phone) {
-                display: inline;
-                margin: 0;
-                padding: 0;
-                background: transparent;
-                font-style: normal;
-              }
+              // @include respond(phone) {
+              //   display: inline;
+              //   margin: 0;
+              //   padding: 0;
+              //   background: transparent;
+              //   font-style: normal;
+              // }
             }
           }
         }
@@ -218,9 +194,9 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     padding: 4.8rem 0;
     text-align: center;
   
-    @include respond(phone) {
-      border: 0px;
-    }
+    // @include respond(phone) {
+    //   border: 0px;
+    // }
   
     &__text {
       color: darken($white-color, 50%);
