@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ProjectDetailsComponent } from './projects/project-details.component';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ExperienceComponent } from './experience/experience.component';
 
 
 
@@ -15,7 +16,8 @@ import { FooterComponent } from './footer/footer.component';
     AppComponent,
     ProjectDetailsComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
+    ExperienceComponent
   ],
 
   imports: [

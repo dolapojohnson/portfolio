@@ -131,8 +131,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     font-family: 'Montserrat', sans-serif;
     height: 100%;
     border-top: 0px;
-    //-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-    //clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
     padding-bottom: 10%;
 
     .about-wrapper {
@@ -143,19 +141,8 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
           justify-content: center;
           flex-direction: column;
     
-          // @include respond(tab-port-sm) {
-          //   align-items: center;
-          // }
-    
           &-text {
             text-align: left;
-    
-            // @include respond(tab-port) {
-            //   text-align: left;
-            // }
-            // @include respond(tab-port-sm) {
-            //   text-align: center;
-            // }
 
            
             &--important {
@@ -165,14 +152,6 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
               padding: 0 0.3rem;
               margin: 0.3rem 0;
               line-height: 1.6;
-    
-              // @include respond(phone) {
-              //   display: inline;
-              //   margin: 0;
-              //   padding: 0;
-              //   background: transparent;
-              //   font-style: normal;
-              // }
             }
           }
         }
@@ -255,5 +234,20 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 
   &:hover {
     transform: translateY(-2px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #about {
+    width: 100lvw;
+
+    .img-fluid {
+      margin-bottom: 10vh;
+    }
+
+    .view-resume-button {
+      display: flex;
+      justify-content: center;
+    }
   }
 }
