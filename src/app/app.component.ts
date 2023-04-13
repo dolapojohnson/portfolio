@@ -10,7 +10,7 @@ export class AppComponent {
   yourName: string = 'Dolapo';
   title: string = 'Portfolio';
   devStack: string = 'Frontend Developer';
-  sectionTitle: string = 'Get to know me';
+  sectionTitle: string = 'Read about me';
   aboutMeImageUrl: string = '../assets/images/johndoe.jpg';
 
 // a goToUrl method that directs the user to the external resume page

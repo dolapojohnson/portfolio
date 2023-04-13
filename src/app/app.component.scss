@@ -125,7 +125,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   /*About Me Styling*/
 
 #about {
-    background-color: $primary-color;
+    background-color: #fff;
     //background-image: url("../assets/images/auditorium.png");
     color: $dark-blue-text;
     font-family: 'Montserrat', sans-serif;
@@ -242,7 +242,9 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
     width: 100lvw;
 
     .img-fluid {
-      margin-bottom: 10vh;
+      margin: 4vh auto;
+      display: flex;
+      justify-content: center;
     }
 
     .view-resume-button {
@@ -250,4 +252,12 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
       justify-content: center;
     }
   }
+}
+
+#experience {
+  background: #f9f9f9;
+}
+
+#education {
+  background: #fff;
 }
