@@ -251,6 +251,11 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
       justify-content: center;
     }
 
+    p {
+      font-size: .8rem;
+      word-spacing: 0;
+    }
+
     .view-resume-button {
       display: flex;
       justify-content: center;
