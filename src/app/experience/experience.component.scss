@@ -9,11 +9,12 @@
 }
 
 .card {
-     width: 23rem;
+     width: 21rem;
      position: relative;
      overflow: hidden;
      height: auto;
      padding: 2rem;
+     font-size: small;
      margin-bottom: 10vh;
 
      h3 {
@@ -21,7 +22,7 @@
      }
 
      p {
-          text-align: justify;
+          text-align: center;
           word-spacing: 0px;
           text-justify: inter-word;
           padding-top: 1vh;

@@ -240,9 +240,13 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 @media screen and (max-width: 600px) {
   #about {
     width: 100lvw;
+    
+    .section-title {
+      margin-bottom: 1vh;
+    }
 
     .img-fluid {
-      margin: 4vh auto;
+      margin: 2vh auto;
       display: flex;
       justify-content: center;
     }
