@@ -94,7 +94,7 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
 }
 
 .img_ {
-  height: 450px;
+  height: 400px;
 }
 
 #projects {
@@ -170,6 +170,16 @@ ORDER: Base + Typography > Generar Layout + Grid > Page Layout > Components
   
     &:hover {
       transform: translateY(-2px);
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .img_ {
+      height: auto;
+    }
+
+    .live-button {
+      margin-bottom: 1vh;
     }
   }
 
