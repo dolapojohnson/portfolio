@@ -10,7 +10,7 @@ import { ProjectService } from './project.service'
 })
 
 export class ProjectDetailsComponent implements OnInit, OnDestroy {
-  projectSectionTitle: string = 'Personal projects';
+  projectSectionTitle: string = 'Personal Projects';
   errorMessage: string = '';
   projects: IProject[] = [];
   sub!: Subscription;
