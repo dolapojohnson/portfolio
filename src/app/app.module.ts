@@ -24,7 +24,7 @@ import { EducationComponent } from './education/education.component';
   imports: [
     BrowserModule,
     HttpClientModule,
-    CompleteMaterialModule
+    CompleteMaterialModule,
   ],
   
   providers: [],
