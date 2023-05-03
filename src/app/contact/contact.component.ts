@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToasterService } from '../services/toastrservice/toastr.service';
 
 @Component({
   selector: 'app-contact',
@@ -9,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 export class ContactComponent implements OnInit {
   contactSectionTitle: string = 'contact';
 
-  constructor() { }
+  constructor(private notifyService: ToasterService) { }
 
   ngOnInit(): void {
+  }
+
+  notifyUser() {
+    this.notifyService.showInfo("Sorry, you can't contact us now");
+    console.log('1')
   }
 
 }

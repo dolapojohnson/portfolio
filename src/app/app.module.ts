@@ -2,6 +2,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { CompleteMaterialModule } from '../shared/angular-material-modules';
+import { ToastrModule } from 'ngx-toastr';
 
 import { AppComponent } from './app.component';
 import { ProjectDetailsComponent } from './projects/project-details.component';
@@ -25,6 +26,7 @@ import { EducationComponent } from './education/education.component';
     BrowserModule,
     HttpClientModule,
     CompleteMaterialModule,
+    ToastrModule.forRoot()
   ],
   
   providers: [],
