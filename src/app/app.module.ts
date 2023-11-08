@@ -11,6 +11,7 @@ import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { EducationComponent } from './education/education.component';
+import { MediumComponent } from './medium/medium.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { EducationComponent } from './education/education.component';
     ContactComponent,
     FooterComponent,
     ExperienceComponent,
-    EducationComponent
+    EducationComponent,
+    MediumComponent
   ],
 
   imports: [

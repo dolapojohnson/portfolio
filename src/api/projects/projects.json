@@ -10,20 +10,29 @@
     },
     {
         "projectId": 1,
-        "projectTitle": "Face-Recognition System",
-        "description": "Learning to consume a REST API, I explored some machine learning features of the Rapid API. Built using React, tachyons and a few other libraries.",
-        "releaseDate": "March 19, 2017",
-        "projectImageUrl": "assets/images/industrial_designers.jpg",
-        "sourceCodeUrl": "https://github.com/dolapojohnson/Face-Recognition",
-        "liveUrl": "lsdghjsk"
+        "projectTitle": "Star Wars",
+        "description": "I utilized the Swapi API to work with Star Wars movie data and implemented various functionalities using Next.js..",
+        "releaseDate": "Oct 19, 2023",
+        "projectImageUrl": "assets/images/starwars_angular.PNG",
+        "sourceCodeUrl": "https://github.com/dolapojohnson/starwars",
+        "liveUrl": "https://starwars-hzp5iychs-dolapojohnsons-projects.vercel.app/"
     },
     {
-        "projectId": 3,
+        "projectId": 2,
         "projectTitle": "WeatherInsider",
         "description": "This application consumed the Open Weather API to display the weather forecast for any city or place queried. My first dummy and individual project learning Reactjs.",
         "releaseDate": "Nov 25, 2020",
         "projectImageUrl": "assets/images/organizing_projects.jpg",
         "sourceCodeUrl": "https://github.com/dolapojohnson/weatherInsider",
+        "liveUrl": "lsdghjsk"
+    },
+    {
+        "projectId": 3,
+        "projectTitle": "Face-Recognition System",
+        "description": "Learning to consume a REST API, I explored some machine learning features of the Rapid API. Built using React, tachyons and a few other libraries.",
+        "releaseDate": "March 19, 2017",
+        "projectImageUrl": "assets/images/industrial_designers.jpg",
+        "sourceCodeUrl": "https://github.com/dolapojohnson/Face-Recognition",
         "liveUrl": "lsdghjsk"
     }
 ]
